@@ -63,7 +63,7 @@ import {
   toVideo 
 } from "./lib/converter.js"
 
-const phoneNumber = dtb.config?.pairingNumber[0];
+const phoneNumber = dtb.config.pairingNumber;
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
 const useMobile = process.argv.includes("--mobile")
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
